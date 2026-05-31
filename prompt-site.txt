@@ -1,0 +1,96 @@
+Crie um site one page (página única) para uma empresa de tecnologia chamada "TechHub.ia.br". O domínio sugerido é TechHub.ia.br.ia.br (apenas referência).
+
+O posicionamento da empresa é: somos um time de especialistas em Inteligência Artificial, Dados, Analytics, Ciência de Dados e Desenvolvimento de Software. Contamos com engenheiros de software, engenheiros de dados, cientistas de dados e designers experientes. Atendemos duas frentes principais:
+1. Desenvolvimento de MVPs (produtos mínimos viáveis) para startups e pequenas empresas.
+2. Outsourcing de profissionais de tecnologia (staff augmentation) para projetos de qualquer porte.
+
+Mensagem central: "IA First" – usamos inteligência artificial em todo o fluxo de trabalho para entregar projetos complexos em menos tempo, com custo acessível e foco em resultados reais para o negócio.
+
+Design e identidade visual:
+- Cores primárias: preto (#000000 ou #0A0A0A) e verde (#00FF00 ou #00E676) – tom de verde neon/tecnologia.
+- Fundo predominante preto, com detalhes e acentos em verde.
+- Tipografia moderna, sans-serif (ex: Inter, Poppins, ou Montserrat).
+- Elementos com efeito de glow (brilho) verde, bordas finas, ícones minimalistas.
+- Estilo "alta tecnologia" e "agilidade": linhas retas, animações sutis de entrada, microinterações, possibilidade de fundo com grid ou ondas abstratas em tom muito escuro.
+
+Estrutura da página (seções obrigatórias em ordem):
+
+1. Hero (topo):
+   - Título principal: "IA First. Resultados em tempo recorde."
+   - Subtítulo: "Time de especialistas em IA, Dados e Software para acelerar seu MVP ou reforçar sua equipe com outsourcing de alto nível."
+   - Botão CTA: "Falar com um especialista" (link para formulário de contato ou WhatsApp).
+   - Opcional: uma animação pequena com partículas ou um chip de IA girando.
+
+2. O que fazemos (diferenciais em cards):
+   - Card 1: Desenvolvimento de MVP – "Do conceito ao protótipo funcional em semanas, não meses."
+   - Card 2: Outsourcing de Talentos – "Engenheiros de dados, cientistas de IA e devs software prontos para atuar no seu projeto."
+   - Card 3: IA First – "Todo projeto é acelerado por agentes de IA, automação e modelos sob medida."
+   - Cada card com ícone elegante e descrição curta.
+
+3. Serviços (lista ou grid com ícones):
+   - Engenharia de IA (LLMs, chatbots, visão computacional, agentes)
+   - Engenharia de Dados (pipelines, ETL, data lakes, warehousing)
+   - Ciência de Dados & Analytics (modelos preditivos, dashboards, insights)
+   - Engenharia de Software (APIs, microserviços, aplicações web/mobile)
+   - Design de Produto (UI/UX para MVPs)
+
+4. Diferenciais competitivos (bullet points com ícones de check verde):
+   - Projetos complexos entregues em até 60% menos tempo (com IA)
+   - Custo acessível (modelo flexível: projeto fechado, hora, ou revenue share)
+   - Equipe sênior com mais de 5 anos de experiência em média
+   - Foco em resultado: só pagamos por entregáveis (opcional)
+   - Atuação 100% remota e ágil
+
+5. Cases / Exemplos de sucesso (placeholders):
+   - Mostrar 3 cards com "MVP para fintech", "Pipeline de dados para e-commerce", "Chatbot IA para suporte" – com resultados resumidos.
+
+6. Depoimentos (opcional, mas recomendado):
+   - 2 a 3 frases de clientes fictícios (ex: "Entregaram o MVP em 4 semanas. Recomendo.").
+
+7. Chamada para ação final:
+   - Texto: "Pronto para acelerar seu projeto com IA?"
+   - Botão: "Agendar uma conversa" (link para Calendly ou formulário).
+
+8. Rodapé:
+   - Links para contato: e-mail, LinkedIn, WhatsApp (ícones).
+   - Copyright e ano.
+
+Requisitos técnicos:
+- Desenvolvido em HTML, CSS e JavaScript puro (ou framework leve como TailwindCSS + Alpine.js) para fácil hospedagem.
+- Totalmente responsivo (mobile first).
+- Otimizado para velocidade de carregamento (Google PageSpeed > 90).
+- Compatível com todos os navegadores modernos.
+- Deve usar a fonte "Inter" ou "Poppins" do Google Fonts.
+- Incluir um favicon com ícone de "TechHub.ia.br" (chama ou letra I estilizada).
+- Botões e links devem ter hover com efeito de borda verde ou brilho.
+- Não usar imagens de banco de imagens genéricas – prefira ilustrações abstratas ou geometria em SVG (linhas, grids, círculos) para manter o tema tecnológico.
+
+REQUISITOS OBRIGATÓRIOS DE SEO (otimização para mecanismos de busca):
+
+1. Estrutura HTML semântica: use as tags corretas (header, nav, main, section, article, footer) para que os robôs entendam a hierarquia do conteúdo.
+
+2. Meta tags essenciais no <head>:
+   - <title> título único e descritivo (ex: "TechHub.ia.br | IA First - Especialistas em Dados e Software")
+   - <meta name="description"> com até 160 caracteres resumindo os serviços (incluir palavras-chave: IA, dados, analytics, MVP, outsourcing)
+   - <meta name="keywords"> (opcional, mas pode incluir "engenharia de dados, ciência de dados, desenvolvimento de software, IA First")
+   - <meta charset="UTF-8">
+   - <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   - <meta name="robots" content="index, follow">
+   - <meta property="og:title" e "og:description" para compartilhamento em redes sociais.
+   - <meta name="author" content="TechHub.ia.br">
+
+3. Dados estruturados (JSON-LD): insira um script com Schema.org do tipo "Organization" ou "LocalBusiness", contendo nome, URL, descrição, logo, contatos (e-mail, WhatsApp, LinkedIn).
+
+4. URLs amigáveis: como é uma one page, o arquivo deve se chamar index.html. Se houver âncoras internas (#secoes), os IDs devem ser descritivos (ex: "#servicos", "#cases").
+
+5. Acessibilidade e imagens: todas as imagens/SVG devem ter atributo alt descritivo. Ícones decorativos podem ter alt vazio (alt="").
+
+6. Conteúdo textual relevante: os textos das seções (especialmente o título principal, subtítulo e cards) devem conter palavras-chave naturalmente, sem excesso (evitar keyword stuffing).
+
+7. Performance e indexação: garantir que o site carregue rápido (otimizar CSS/JS, usar lazy loading em imagens pesadas, se houver). O código deve ser limpo, indentado e comentado em português ou inglês para facilitar manutenção.
+
+8. Links internos e externos: todos os links (WhatsApp, e-mail, LinkedIn) devem usar atributos adequados (ex: target="_blank" rel="noopener noreferrer" para links externos).
+
+O site deve ser entregue como um único arquivo HTML (ou um zip com HTML/CSS/JS) que eu possa hospedar em qualquer servidor. O código deve ser limpo, comentado, focado em ser facilmente indexado por robôs de busca, e fácil de editar.
+
+Antes de finalizar, verifique se a tag <title> e a meta description estão preenchidas corretamente e se o JSON-LD foi inserido com os dados de contato da empresa
