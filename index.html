@@ -7,30 +7,28 @@
   <meta name="robots" content="index, follow">
   <meta name="author" content="TechHub.ia.br">
 
-  <!-- Título único e descritivo (até ~60 caracteres) -->
-  <title>TechHub.ia.br | IA First – Especialistas em Dados e Software</title>
+  <!-- Título único e descritivo -->
+  <title>TechHub.ia.br | AI First – Especialistas em Dados e Software</title>
 
   <!-- Meta description (até 160 caracteres, com palavras-chave) -->
   <meta name="description"
-        content="TechHub.ia.br: time de especialistas em IA, dados, analytics, MVP e outsourcing de tecnologia. Desenvolvemos software acelerado por inteligência artificial. IA First.">
+        content="TechHub.ia.br: time de especialistas em IA, dados, analytics, MVP e outsourcing de tecnologia. Desenvolvemos software acelerado por inteligência artificial. AI First.">
 
   <!-- Meta keywords (auxiliar) -->
   <meta name="keywords"
-        content="engenharia de dados, ciência de dados, desenvolvimento de software, IA First, MVP, outsourcing, inteligência artificial, analytics, TechHub">
+        content="engenharia de dados, ciência de dados, desenvolvimento de software, AI First, MVP, outsourcing, inteligência artificial, analytics, TechHub">
 
   <!-- Open Graph (compartilhamento em redes sociais) -->
-  <meta property="og:title" content="TechHub.ia.br | IA First – Especialistas em Dados e Software">
-  <meta property="og:description"
-        content="Time de especialistas em IA, Dados e Software. Desenvolvemos MVPs e oferecemos outsourcing de alto nível acelerado por inteligência artificial.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://techhub.ia.br">
-  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title"       content="TechHub.ia.br | AI First – Especialistas em Dados e Software">
+  <meta property="og:description" content="Time de especialistas em IA, Dados e Software. Desenvolvemos MVPs e oferecemos outsourcing de alto nível acelerado por inteligência artificial.">
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://techhub.ia.br">
+  <meta property="og:locale"      content="pt_BR">
 
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="TechHub.ia.br | IA First">
-  <meta name="twitter:description"
-        content="Especialistas em IA, Dados e Software. MVPs e outsourcing acelerados por IA.">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="TechHub.ia.br | AI First">
+  <meta name="twitter:description" content="Especialistas em IA, Dados e Software. MVPs e outsourcing acelerados por IA.">
 
   <!-- Canonical URL -->
   <link rel="canonical" href="https://techhub.ia.br">
@@ -46,828 +44,35 @@
 
   <!-- ==================== JSON-LD DADOS ESTRUTURADOS (Schema.org) ==================== -->
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "TechHub.ia.br",
-      "url": "https://techhub.ia.br",
-      "description": "Time de especialistas em Inteligência Artificial, Dados, Analytics, Ciência de Dados e Desenvolvimento de Software. Desenvolvemos MVPs e oferecemos outsourcing de tecnologia acelerado por IA.",
-      "logo": "https://techhub.ia.br/favicon.svg",
-      "contactPoint": [
-        {
-          "@type": "ContactPoint",
-          "contactType": "sales",
-          "email": "contato@techhub.ia.br",
-          "url": "https://wa.me/5500000000000",
-          "availableLanguage": "Portuguese"
-        }
-      ],
-      "sameAs": [
-        "https://linkedin.com/company/techhub-ia-br",
-        "https://wa.me/5500000000000"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "BR"
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "TechHub.ia.br",
+    "url": "https://techhub.ia.br",
+    "description": "Time de especialistas em Inteligência Artificial, Dados, Analytics, Ciência de Dados e Desenvolvimento de Software. Desenvolvemos MVPs e oferecemos outsourcing de tecnologia acelerado por IA.",
+    "logo": "https://techhub.ia.br/favicon.svg",
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "email": "contato@techhub.ia.br",
+        "url": "https://wa.me/5500000000000",
+        "availableLanguage": "Portuguese"
       }
+    ],
+    "sameAs": [
+      "https://linkedin.com/company/techhub-ia-br",
+      "https://wa.me/5500000000000"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BR"
     }
+  }
   </script>
 
-  <!-- ==================== ESTILOS CSS ==================== -->
-  <style>
-    /* ========== RESET & BASE ========== */
-    *, *::before, *::after {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    :root {
-      --bg-primary: #0A0A0A;
-      --bg-secondary: #111111;
-      --bg-card: #1A1A1A;
-      --accent: #00E676;
-      --accent-glow: rgba(0, 230, 118, 0.5);
-      --accent-soft: rgba(0, 230, 118, 0.1);
-      --text-primary: #FFFFFF;
-      --text-secondary: #B0B0B0;
-      --text-muted: #707070;
-      --border-subtle: rgba(255, 255, 255, 0.06);
-      --border-accent: rgba(0, 230, 118, 0.3);
-      --radius: 12px;
-      --radius-lg: 20px;
-      --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    html {
-      scroll-behavior: smooth;
-      scroll-padding-top: 80px;
-    }
-
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background-color: var(--bg-primary);
-      color: var(--text-primary);
-      line-height: 1.6;
-      overflow-x: hidden;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-
-    /* ========== BACKGROUND GRID (efeito tech sutil) ========== */
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      z-index: 0;
-      pointer-events: none;
-      background-image:
-        linear-gradient(rgba(0, 230, 118, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 230, 118, 0.03) 1px, transparent 1px);
-      background-size: 60px 60px;
-    }
-
-    /* ========== TYPOGRAPHY ========== */
-    h1, h2, h3, h4 {
-      font-weight: 700;
-      line-height: 1.2;
-    }
-
-    h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
-    h2 { font-size: clamp(1.6rem, 4vw, 2.5rem); }
-    h3 { font-size: clamp(1.1rem, 2.5vw, 1.4rem); }
-
-    /* ========== LAYOUT ========== */
-    .container {
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-      position: relative;
-      z-index: 1;
-    }
-
-    section {
-      padding: 100px 0;
-      position: relative;
-      z-index: 1;
-    }
-
-    /* ========== NAVBAR ========== */
-    .navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-      background: rgba(10, 10, 10, 0.85);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border-bottom: 1px solid var(--border-subtle);
-      transition: var(--transition);
-    }
-
-    .navbar.scrolled {
-      border-bottom-color: var(--border-accent);
-      box-shadow: 0 4px 30px rgba(0, 230, 118, 0.08);
-    }
-
-    .navbar .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 70px;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      color: var(--text-primary);
-      font-weight: 800;
-      font-size: 1.3rem;
-      letter-spacing: -0.5px;
-    }
-
-    .logo-icon {
-      width: 38px;
-      height: 38px;
-      background: var(--accent);
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #0A0A0A;
-      font-weight: 900;
-      font-size: 1.1rem;
-      box-shadow: 0 0 20px var(--accent-glow);
-    }
-
-    .logo-dot {
-      color: var(--accent);
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 28px;
-      list-style: none;
-      align-items: center;
-    }
-
-    .nav-links a {
-      color: var(--text-secondary);
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 500;
-      transition: var(--transition);
-      position: relative;
-      padding: 4px 0;
-    }
-
-    .nav-links a::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background: var(--accent);
-      transition: var(--transition);
-      border-radius: 2px;
-    }
-
-    .nav-links a:hover,
-    .nav-links a:focus {
-      color: var(--text-primary);
-    }
-
-    .nav-links a:hover::after,
-    .nav-links a:focus::after {
-      width: 100%;
-    }
-
-    /* Mobile menu toggle */
-    .menu-toggle {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 8px;
-      z-index: 1001;
-    }
-
-    .menu-toggle span {
-      display: block;
-      width: 26px;
-      height: 2px;
-      background: var(--text-primary);
-      border-radius: 2px;
-      transition: var(--transition);
-    }
-
-    .menu-toggle.active span:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px);
-    }
-    .menu-toggle.active span:nth-child(2) {
-      opacity: 0;
-    }
-    .menu-toggle.active span:nth-child(3) {
-      transform: rotate(-45deg) translate(5px, -5px);
-    }
-
-    /* ========== BUTTONS ========== */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 14px 28px;
-      border-radius: 50px;
-      font-weight: 600;
-      font-size: 0.95rem;
-      font-family: 'Inter', sans-serif;
-      text-decoration: none;
-      cursor: pointer;
-      border: none;
-      transition: all var(--transition);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .btn-primary {
-      background: var(--accent);
-      color: #0A0A0A;
-      box-shadow: 0 0 30px var(--accent-glow), 0 4px 15px rgba(0, 230, 118, 0.25);
-    }
-
-    .btn-primary:hover,
-    .btn-primary:focus {
-      box-shadow: 0 0 50px var(--accent-glow), 0 6px 25px rgba(0, 230, 118, 0.4);
-      transform: translateY(-2px);
-    }
-
-    .btn-outline {
-      background: transparent;
-      color: var(--accent);
-      border: 2px solid var(--accent);
-      box-shadow: 0 0 15px rgba(0, 230, 118, 0.15);
-    }
-
-    .btn-outline:hover,
-    .btn-outline:focus {
-      background: var(--accent-soft);
-      box-shadow: 0 0 30px var(--accent-glow);
-      transform: translateY(-2px);
-    }
-
-    /* ========== SECTION HEADERS ========== */
-    .section-header {
-      text-align: center;
-      margin-bottom: 60px;
-    }
-
-    .section-label {
-      display: inline-block;
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      color: var(--accent);
-      margin-bottom: 12px;
-      padding: 6px 14px;
-      border: 1px solid var(--border-accent);
-      border-radius: 50px;
-      background: var(--accent-soft);
-    }
-
-    .section-title {
-      margin-bottom: 16px;
-    }
-
-    .section-title .highlight {
-      color: var(--accent);
-      text-shadow: 0 0 30px var(--accent-glow);
-    }
-
-    .section-subtitle {
-      color: var(--text-secondary);
-      font-size: 1.05rem;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    /* ========== HERO SECTION ========== */
-    #hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      padding-top: 70px;
-      padding-bottom: 60px;
-    }
-
-    .hero-content {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: center;
-    }
-
-    .hero-text {
-      max-width: 580px;
-    }
-
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 16px;
-      background: var(--accent-soft);
-      border: 1px solid var(--border-accent);
-      border-radius: 50px;
-      font-size: 0.85rem;
-      font-weight: 500;
-      color: var(--accent);
-      margin-bottom: 24px;
-      animation: fadeInUp 0.6s ease forwards;
-    }
-
-    .hero-badge .pulse-dot {
-      width: 8px;
-      height: 8px;
-      background: var(--accent);
-      border-radius: 50%;
-      animation: pulse 2s infinite;
-    }
-
-    .hero-title {
-      margin-bottom: 20px;
-      animation: fadeInUp 0.6s ease 0.1s forwards;
-      opacity: 0;
-    }
-
-    .hero-title .highlight {
-      color: var(--accent);
-      text-shadow: 0 0 40px var(--accent-glow);
-    }
-
-    .hero-subtitle {
-      color: var(--text-secondary);
-      font-size: 1.1rem;
-      line-height: 1.7;
-      margin-bottom: 32px;
-      animation: fadeInUp 0.6s ease 0.2s forwards;
-      opacity: 0;
-    }
-
-    .hero-buttons {
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-      animation: fadeInUp 0.6s ease 0.3s forwards;
-      opacity: 0;
-    }
-
-    /* Hero visual – animated abstract tech element */
-    .hero-visual {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      animation: fadeInUp 0.8s ease 0.2s forwards;
-      opacity: 0;
-    }
-
-    .tech-orb {
-      position: relative;
-      width: 320px;
-      height: 320px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .orb-ring {
-      position: absolute;
-      border-radius: 50%;
-      border: 1px solid var(--border-accent);
-      animation: spin 20s linear infinite;
-    }
-
-    .orb-ring:nth-child(1) { width: 320px; height: 320px; animation-duration: 20s; }
-    .orb-ring:nth-child(2) { width: 260px; height: 260px; animation-duration: 15s; animation-direction: reverse; }
-    .orb-ring:nth-child(3) { width: 200px; height: 200px; animation-duration: 10s; }
-    .orb-ring:nth-child(4) { width: 140px; height: 140px; animation-duration: 8s; animation-direction: reverse; }
-
-    .orb-core {
-      width: 80px;
-      height: 80px;
-      background: var(--accent);
-      border-radius: 50%;
-      box-shadow: 0 0 60px var(--accent-glow), 0 0 120px rgba(0, 230, 118, 0.3);
-      animation: pulse 2s ease-in-out infinite;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 900;
-      font-size: 1.5rem;
-      color: #0A0A0A;
-    }
-
-    /* ========== CARDS GRID ========== */
-    .cards-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 24px;
-    }
-
-    .card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-lg);
-      padding: 36px 30px;
-      transition: all var(--transition);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, var(--accent), transparent);
-      opacity: 0;
-      transition: opacity var(--transition);
-    }
-
-    .card:hover {
-      border-color: var(--border-accent);
-      transform: translateY(-4px);
-      box-shadow: 0 20px 40px rgba(0, 230, 118, 0.08);
-    }
-
-    .card:hover::before {
-      opacity: 1;
-    }
-
-    .card-icon {
-      width: 52px;
-      height: 52px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: var(--accent-soft);
-      border: 1px solid var(--border-accent);
-      border-radius: var(--radius);
-      margin-bottom: 20px;
-      color: var(--accent);
-      font-size: 1.4rem;
-    }
-
-    .card h3 {
-      margin-bottom: 10px;
-      font-size: 1.2rem;
-    }
-
-    .card p {
-      color: var(--text-secondary);
-      font-size: 0.95rem;
-      line-height: 1.6;
-    }
-
-    /* ========== SERVICES GRID (compacto) ========== */
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .service-item {
-      background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius);
-      padding: 28px 22px;
-      text-align: center;
-      transition: all var(--transition);
-    }
-
-    .service-item:hover {
-      border-color: var(--border-accent);
-      box-shadow: 0 10px 30px rgba(0, 230, 118, 0.06);
-      transform: translateY(-3px);
-    }
-
-    .service-item .card-icon {
-      margin: 0 auto 16px;
-    }
-
-    .service-item h4 {
-      font-size: 1rem;
-      margin-bottom: 6px;
-    }
-
-    .service-item p {
-      color: var(--text-muted);
-      font-size: 0.85rem;
-    }
-
-    /* ========== DIFFERENTIATORS ========== */
-    .diff-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 16px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .diff-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
-      padding: 18px 20px;
-      background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius);
-      transition: all var(--transition);
-    }
-
-    .diff-item:hover {
-      border-color: var(--border-accent);
-    }
-
-    .diff-check {
-      flex-shrink: 0;
-      width: 28px;
-      height: 28px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: var(--accent-soft);
-      border-radius: 50%;
-      color: var(--accent);
-      font-size: 0.85rem;
-      margin-top: 2px;
-    }
-
-    .diff-item h4 {
-      font-size: 0.95rem;
-      margin-bottom: 4px;
-    }
-
-    .diff-item p {
-      color: var(--text-muted);
-      font-size: 0.85rem;
-    }
-
-    /* ========== TESTIMONIALS ========== */
-    .testimonial-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-lg);
-      padding: 30px;
-      position: relative;
-    }
-
-    .testimonial-card::before {
-      content: '"';
-      position: absolute;
-      top: 10px;
-      left: 20px;
-      font-size: 5rem;
-      color: var(--accent);
-      opacity: 0.15;
-      font-weight: 900;
-      line-height: 1;
-      pointer-events: none;
-    }
-
-    .testimonial-text {
-      font-size: 1rem;
-      color: var(--text-secondary);
-      line-height: 1.7;
-      margin-bottom: 16px;
-      font-style: italic;
-    }
-
-    .testimonial-author {
-      font-weight: 600;
-      font-size: 0.9rem;
-      color: var(--text-primary);
-    }
-
-    .testimonial-role {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-    }
-
-    /* ========== CTA SECTION ========== */
-    #cta {
-      text-align: center;
-      background: linear-gradient(180deg, transparent, var(--accent-soft), transparent);
-      border-top: 1px solid var(--border-accent);
-      border-bottom: 1px solid var(--border-accent);
-    }
-
-    #cta .section-title {
-      font-size: clamp(1.8rem, 4vw, 2.8rem);
-    }
-
-    /* ========== FOOTER ========== */
-    footer {
-      background: var(--bg-secondary);
-      border-top: 1px solid var(--border-subtle);
-      padding: 40px 0;
-      position: relative;
-      z-index: 1;
-    }
-
-    .footer-content {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .footer-brand {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: 700;
-      font-size: 1.05rem;
-    }
-
-    .footer-social {
-      display: flex;
-      gap: 16px;
-      list-style: none;
-    }
-
-    .footer-social a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 42px;
-      height: 42px;
-      border: 1px solid var(--border-subtle);
-      border-radius: 50%;
-      color: var(--text-secondary);
-      text-decoration: none;
-      transition: all var(--transition);
-      font-size: 1.1rem;
-    }
-
-    .footer-social a:hover,
-    .footer-social a:focus {
-      border-color: var(--accent);
-      color: var(--accent);
-      box-shadow: 0 0 20px var(--accent-glow);
-    }
-
-    .footer-bottom {
-      text-align: center;
-      margin-top: 24px;
-      padding-top: 24px;
-      border-top: 1px solid var(--border-subtle);
-      color: var(--text-muted);
-      font-size: 0.85rem;
-    }
-
-    /* ========== SCROLL-REVEAL ANIMATIONS ========== */
-    .reveal {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
-    }
-
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* ========== KEYFRAMES ========== */
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); opacity: 1; }
-      50%      { transform: scale(1.08); opacity: 0.8; }
-    }
-
-    @keyframes spin {
-      from { transform: rotate(0deg); }
-      to   { transform: rotate(360deg); }
-    }
-
-    /* ========== PARTICLES CANVAS ========== */
-    #particles-canvas {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-    }
-
-    /* ========== RESPONSIVE ========== */
-    @media (max-width: 968px) {
-      .hero-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-
-      .hero-text {
-        max-width: 100%;
-      }
-
-      .hero-visual {
-        order: -1;
-      }
-
-      .tech-orb {
-        width: 220px;
-        height: 220px;
-      }
-
-      .orb-ring:nth-child(1) { width: 220px; height: 220px; }
-      .orb-ring:nth-child(2) { width: 180px; height: 180px; }
-      .orb-ring:nth-child(3) { width: 140px; height: 140px; }
-      .orb-ring:nth-child(4) { width: 100px; height: 100px; }
-
-      .hero-buttons {
-        justify-content: center;
-      }
-
-      .nav-links {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 280px;
-        height: 100vh;
-        background: rgba(10, 10, 10, 0.98);
-        backdrop-filter: blur(30px);
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        padding: 60px 30px;
-        gap: 20px;
-        transition: right var(--transition);
-        border-left: 1px solid var(--border-subtle);
-      }
-
-      .nav-links.active {
-        right: 0;
-      }
-
-      .nav-links a {
-        font-size: 1.1rem;
-      }
-
-      .menu-toggle {
-        display: flex;
-      }
-
-      section {
-        padding: 70px 0;
-      }
-
-      .cards-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .hero-buttons {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .btn {
-        width: 100%;
-        justify-content: center;
-      }
-
-      .footer-content {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .tech-orb {
-        width: 180px;
-        height: 180px;
-      }
-
-      .orb-ring:nth-child(1) { width: 180px; height: 180px; }
-      .orb-ring:nth-child(2) { width: 145px; height: 145px; }
-      .orb-ring:nth-child(3) { width: 110px; height: 110px; }
-      .orb-ring:nth-child(4) { width: 75px; height: 75px; }
-    }
-  </style>
+  <!-- Stylesheet externo -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -881,11 +86,14 @@
 
       <nav aria-label="Navegação principal">
         <ul class="nav-links" id="navLinks" role="menubar">
-          <li role="none"><a href="#servicos" role="menuitem">Serviços</a></li>
+          <li role="none"><a href="#servicos"    role="menuitem">Serviços</a></li>
+          <li role="none"><a href="#time"        role="menuitem">Time</a></li>
           <li role="none"><a href="#diferenciais" role="menuitem">Diferenciais</a></li>
-          <li role="none"><a href="#cases" role="menuitem">Cases</a></li>
+          <li role="none"><a href="#cases"       role="menuitem">Cases</a></li>
           <li role="none"><a href="#depoimentos" role="menuitem">Depoimentos</a></li>
-          <li role="none"><a href="#contato" class="btn btn-primary" role="menuitem">Falar com um especialista</a></li>
+          <li role="none">
+            <a href="#contato" class="btn btn-primary" role="menuitem">Falar com um especialista</a>
+          </li>
         </ul>
       </nav>
 
@@ -897,20 +105,21 @@
     </div>
   </header>
 
-  <!-- ==================== MAIN CONTENT ==================== -->
+  <!-- ==================== CONTEÚDO PRINCIPAL ==================== -->
   <main id="main-content">
 
     <!-- ========== HERO ========== -->
     <section id="hero" aria-labelledby="hero-title">
       <div class="container">
         <div class="hero-content">
+
           <div class="hero-text">
             <span class="hero-badge">
               <span class="pulse-dot" aria-hidden="true"></span>
-              IA First – Inteligência Artificial em todo o fluxo
+              AI First – Inteligência Artificial em todo o fluxo
             </span>
             <h1 class="hero-title" id="hero-title">
-              IA First.<br>
+              AI First.<br>
               <span class="highlight">Resultados em tempo recorde.</span>
             </h1>
             <p class="hero-subtitle">
@@ -923,16 +132,17 @@
             </div>
           </div>
 
-          <!-- Animated tech orb (SVG-based abstract visual) -->
+          <!-- Orbe animada (elemento visual abstrato – sem imagem externa) -->
           <div class="hero-visual" aria-hidden="true">
             <div class="tech-orb">
               <div class="orb-ring"></div>
               <div class="orb-ring"></div>
               <div class="orb-ring"></div>
               <div class="orb-ring"></div>
-              <div class="orb-core" title="IA">AI</div>
+              <div class="orb-core">AI</div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -940,6 +150,7 @@
     <!-- ========== SERVIÇOS / O QUE FAZEMOS ========== -->
     <section id="servicos" aria-labelledby="servicos-title">
       <div class="container">
+
         <div class="section-header reveal">
           <span class="section-label">O que fazemos</span>
           <h2 class="section-title" id="servicos-title">
@@ -951,12 +162,13 @@
           </p>
         </div>
 
-        <!-- Diferenciais em cards -->
+        <!-- Cards principais -->
         <div class="cards-grid reveal">
+
           <article class="card">
             <div class="card-icon" aria-hidden="true">
-              <!-- Rocket SVG icon -->
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <!-- Ícone: foguete -->
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
                 <path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
                 <path d="M9 12H4l.5-2.5M15 18v5l2.5-.5"/>
@@ -972,8 +184,8 @@
 
           <article class="card">
             <div class="card-icon" aria-hidden="true">
-              <!-- Users SVG icon -->
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <!-- Ícone: pessoas / outsourcing -->
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
                 <circle cx="9" cy="7" r="4"/>
                 <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
@@ -990,27 +202,28 @@
 
           <article class="card">
             <div class="card-icon" aria-hidden="true">
-              <!-- CPU/Chip SVG icon -->
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <!-- Ícone: chip / IA -->
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <rect x="4" y="4" width="16" height="16" rx="2"/>
                 <rect x="9" y="9" width="6" height="6"/>
-                <line x1="9" y1="1" x2="9" y2="4"/>
-                <line x1="15" y1="1" x2="15" y2="4"/>
-                <line x1="9" y1="20" x2="9" y2="23"/>
+                <line x1="9"  y1="1"  x2="9"  y2="4"/>
+                <line x1="15" y1="1"  x2="15" y2="4"/>
+                <line x1="9"  y1="20" x2="9"  y2="23"/>
                 <line x1="15" y1="20" x2="15" y2="23"/>
-                <line x1="20" y1="9" x2="23" y2="9"/>
+                <line x1="20" y1="9"  x2="23" y2="9"/>
                 <line x1="20" y1="14" x2="23" y2="14"/>
-                <line x1="1" y1="9" x2="4" y2="9"/>
-                <line x1="1" y1="14" x2="4" y2="14"/>
+                <line x1="1"  y1="9"  x2="4"  y2="9"/>
+                <line x1="1"  y1="14" x2="4"  y2="14"/>
               </svg>
             </div>
-            <h3>IA First</h3>
+            <h3>AI First</h3>
             <p>
               Todo projeto é acelerado por agentes de IA, automação inteligente
               e modelos sob medida. Isso significa mais velocidade, menos custo
               e resultados superiores para o seu negócio.
             </p>
           </article>
+
         </div>
 
         <!-- Lista detalhada de serviços -->
@@ -1022,9 +235,10 @@
         </div>
 
         <div class="services-grid reveal">
+
           <div class="service-item">
             <div class="card-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/>
                 <line x1="12" y1="22" x2="12" y2="15.5"/>
                 <polyline points="22 8.5 12 15.5 2 8.5"/>
@@ -1036,7 +250,7 @@
 
           <div class="service-item">
             <div class="card-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <ellipse cx="12" cy="5" rx="9" ry="3"/>
                 <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
                 <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
@@ -1048,10 +262,10 @@
 
           <div class="service-item">
             <div class="card-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <line x1="18" y1="20" x2="18" y2="10"/>
                 <line x1="12" y1="20" x2="12" y2="4"/>
-                <line x1="6" y1="20" x2="6" y2="14"/>
+                <line x1="6"  y1="20" x2="6"  y2="14"/>
               </svg>
             </div>
             <h4>Ciência de Dados & Analytics</h4>
@@ -1060,7 +274,7 @@
 
           <div class="service-item">
             <div class="card-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <polyline points="16 18 22 12 16 6"/>
                 <polyline points="8 6 2 12 8 18"/>
               </svg>
@@ -1071,7 +285,7 @@
 
           <div class="service-item">
             <div class="card-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <rect x="3" y="3" width="18" height="18" rx="2"/>
                 <circle cx="8.5" cy="8.5" r="1.5"/>
                 <polyline points="21 15 16 10 5 21"/>
@@ -1080,14 +294,135 @@
             <h4>Design de Produto</h4>
             <p>UI/UX para MVPs, prototipação e design systems</p>
           </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TIME DE ESPECIALISTAS ========== -->
+    <section id="time" aria-labelledby="time-title" style="background: var(--bg-secondary);">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <span class="section-label">Quem faz acontecer</span>
+          <h2 class="section-title" id="time-title">
+            Time de <span class="highlight">Especialistas</span>
+          </h2>
+          <p class="section-subtitle">
+            Profissionais sêniores com experiência real em projetos de alto impacto,
+            unidos pela cultura AI First.
+          </p>
+        </div>
+
+        <div class="team-grid">
+
+          <!-- Membro 1: Tomaz Castrillon -->
+          <article class="team-card reveal">
+            <div class="team-avatar-wrap">
+              <img
+                class="team-avatar"
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="Tomaz Castrillon"
+                width="90"
+                height="90"
+                loading="lazy"
+              >
+            </div>
+            <p class="team-name">Tomaz Castrillon</p>
+            <p class="team-role">Cientista de Dados</p>
+            <p class="team-bio">
+              PhD em aprendizado de máquina, lidera projetos de LLM e visão computacional.
+            </p>
+          </article>
+
+          <!-- Membro 2: Ivo Jr -->
+          <article class="team-card reveal">
+            <div class="team-avatar-wrap">
+              <img
+                class="team-avatar"
+                src="https://randomuser.me/api/portraits/men/45.jpg"
+                alt="Ivo Jr"
+                width="90"
+                height="90"
+                loading="lazy"
+              >
+            </div>
+            <p class="team-name">Ivo Jr</p>
+            <p class="team-role">Engenheiro de Dados Sênior</p>
+            <p class="team-bio">
+              Expert em pipelines escaláveis na AWS/GCP, otimização de custos e performance.
+              Há 10 anos atuando com soluções de dados escaláveis.
+            </p>
+          </article>
+
+          <!-- Membro 3: Fred Chehuan -->
+          <article class="team-card reveal">
+            <div class="team-avatar-wrap">
+              <img
+                class="team-avatar"
+                src="https://randomuser.me/api/portraits/men/58.jpg"
+                alt="Fred Chehuan"
+                width="90"
+                height="90"
+                loading="lazy"
+              >
+            </div>
+            <p class="team-name">Fred Chehuan</p>
+            <p class="team-role">Engenheiro de Software Especialista</p>
+            <p class="team-bio">
+              Desenvolvedor full-stack com foco em MVPs ágeis e arquiteturas serverless.
+              Mais de 15 anos atuando em grandes consultorias com soluções diversas em tecnologia.
+            </p>
+          </article>
+
+          <!-- Membro 4: Rayane Serrano -->
+          <article class="team-card reveal">
+            <div class="team-avatar-wrap">
+              <img
+                class="team-avatar"
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt="Rayane Serrano"
+                width="90"
+                height="90"
+                loading="lazy"
+              >
+            </div>
+            <p class="team-name">Rayane Serrano</p>
+            <p class="team-role">Designer de Produto</p>
+            <p class="team-bio">
+              UI/UX para produtos digitais, especialista em validação rápida de protótipos.
+              Mais de 6 anos atuando com desenvolvimento de marcas digitais.
+            </p>
+          </article>
+
+          <!-- Membro 5: Oziel Neves -->
+          <article class="team-card reveal">
+            <div class="team-avatar-wrap">
+              <img
+                class="team-avatar"
+                src="https://randomuser.me/api/portraits/men/71.jpg"
+                alt="Oziel Neves"
+                width="90"
+                height="90"
+                loading="lazy"
+              >
+            </div>
+            <p class="team-name">Oziel Neves</p>
+            <p class="team-role">Engenheiro de IA</p>
+            <p class="team-bio">
+              Especialista em agentes autônomos, fine-tuning de LLMs e integração de IA generativa
+              em produtos. Mais de 3 anos de experiência em projetos de alto impacto.
+            </p>
+          </article>
+
         </div>
       </div>
     </section>
 
     <!-- ========== DIFERENCIAIS COMPETITIVOS ========== -->
-    <section id="diferenciais" aria-labelledby="diferenciais-title"
-             style="background: var(--bg-secondary);">
+    <section id="diferenciais" aria-labelledby="diferenciais-title">
       <div class="container">
+
         <div class="section-header reveal">
           <span class="section-label">Por que TechHub?</span>
           <h2 class="section-title" id="diferenciais-title">
@@ -1096,6 +431,7 @@
         </div>
 
         <div class="diff-grid reveal">
+
           <div class="diff-item">
             <span class="diff-check" aria-hidden="true">&#10003;</span>
             <div>
@@ -1135,27 +471,31 @@
               <p>Times distribuídos, comunicação transparente e entregas contínuas em ciclos curtos.</p>
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
     <!-- ========== CASES DE SUCESSO ========== -->
-    <section id="cases" aria-labelledby="cases-title">
+    <section id="cases" aria-labelledby="cases-title" style="background: var(--bg-secondary);">
       <div class="container">
+
         <div class="section-header reveal">
           <span class="section-label">Cases</span>
           <h2 class="section-title" id="cases-title">
             Projetos que <span class="highlight">aceleramos</span>
           </h2>
           <p class="section-subtitle">
-            Resultados reais com nosso método IA First.
+            Resultados reais com nosso método AI First.
           </p>
         </div>
 
         <div class="cards-grid reveal">
+
           <article class="card">
             <div class="card-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <!-- Ícone: cifrão / fintech -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <line x1="12" y1="1" x2="12" y2="23"/>
                 <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
               </svg>
@@ -1173,7 +513,8 @@
 
           <article class="card">
             <div class="card-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <!-- Ícone: pulso / pipeline -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
               </svg>
             </div>
@@ -1190,7 +531,8 @@
 
           <article class="card">
             <div class="card-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <!-- Ícone: chat / chatbot -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
               </svg>
             </div>
@@ -1204,14 +546,15 @@
               Resultado: -70% no tempo médio de resposta
             </p>
           </article>
+
         </div>
       </div>
     </section>
 
     <!-- ========== DEPOIMENTOS ========== -->
-    <section id="depoimentos" aria-labelledby="depoimentos-title"
-             style="background: var(--bg-secondary);">
+    <section id="depoimentos" aria-labelledby="depoimentos-title">
       <div class="container">
+
         <div class="section-header reveal">
           <span class="section-label">Depoimentos</span>
           <h2 class="section-title" id="depoimentos-title">
@@ -1220,6 +563,7 @@
         </div>
 
         <div class="cards-grid reveal" style="max-width: 1000px; margin: 0 auto;">
+
           <div class="testimonial-card">
             <p class="testimonial-text">
               Entregaram o MVP da nossa plataforma em 4 semanas. A qualidade do
@@ -1242,13 +586,14 @@
 
           <div class="testimonial-card">
             <p class="testimonial-text">
-              A abordagem IA First é real. O chatbot que eles construíram para nosso
+              A abordagem AI First é real. O chatbot que eles construíram para nosso
               suporte reduziu 70% do volume de tickets em menos de um mês.
               Profissionais excepcionais.
             </p>
             <p class="testimonial-author">Thiago Siqueira</p>
             <p class="testimonial-role">Head de Produto, SaaS Up</p>
           </div>
+
         </div>
       </div>
     </section>
@@ -1256,6 +601,7 @@
     <!-- ========== CTA FINAL ========== -->
     <section id="contato" aria-labelledby="cta-title">
       <div class="container">
+
         <div class="section-header reveal">
           <span class="section-label">Vamos conversar?</span>
           <h2 class="section-title" id="cta-title">
@@ -1268,14 +614,19 @@
         </div>
 
         <div class="reveal" style="text-align: center;">
-          <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer"
-             class="btn btn-primary" style="font-size: 1.05rem; padding: 16px 36px;">
+          <a href="https://wa.me/5500000000000"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="btn btn-primary"
+             style="font-size: 1.05rem; padding: 16px 36px;">
+            <!-- Ícone WhatsApp -->
             <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
             </svg>
             Agendar uma conversa no WhatsApp
           </a>
         </div>
+
       </div>
     </section>
 
@@ -1284,6 +635,7 @@
   <!-- ==================== FOOTER ==================== -->
   <footer role="contentinfo">
     <div class="container">
+
       <div class="footer-content">
         <div class="footer-brand">
           <span class="logo-icon" style="width: 32px; height: 32px; font-size: 0.85rem;">T</span>
@@ -1292,29 +644,36 @@
 
         <ul class="footer-social">
           <li>
-            <a href="mailto:contato@techhub.ia.br" aria-label="Enviar e-mail para TechHub"
-               target="_blank" rel="noopener noreferrer" title="E-mail">
-              <!-- Envelope SVG -->
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <a href="mailto:contato@techhub.ia.br"
+               aria-label="Enviar e-mail para TechHub"
+               title="E-mail">
+              <!-- Ícone: envelope -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <rect x="2" y="4" width="20" height="16" rx="2"/>
                 <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
               </svg>
             </a>
           </li>
           <li>
-            <a href="https://linkedin.com/company/techhub-ia-br" aria-label="LinkedIn TechHub"
-               target="_blank" rel="noopener noreferrer" title="LinkedIn">
-              <!-- LinkedIn SVG -->
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <a href="https://linkedin.com/company/techhub-ia-br"
+               aria-label="LinkedIn TechHub"
+               target="_blank"
+               rel="noopener noreferrer"
+               title="LinkedIn">
+              <!-- Ícone: LinkedIn -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
               </svg>
             </a>
           </li>
           <li>
-            <a href="https://wa.me/5500000000000" aria-label="WhatsApp TechHub"
-               target="_blank" rel="noopener noreferrer" title="WhatsApp">
-              <!-- WhatsApp SVG -->
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <a href="https://wa.me/5500000000000"
+               aria-label="WhatsApp TechHub"
+               target="_blank"
+               rel="noopener noreferrer"
+               title="WhatsApp">
+              <!-- Ícone: WhatsApp -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
               </svg>
             </a>
@@ -1325,77 +684,12 @@
       <div class="footer-bottom">
         <p>&copy; 2026 TechHub.ia.br &mdash; Todos os direitos reservados.</p>
       </div>
+
     </div>
   </footer>
 
-  <!-- ==================== JAVASCRIPT ==================== -->
-  <script>
-    /* ========== MOBILE MENU TOGGLE ========== */
-    (function () {
-      const toggle = document.getElementById('menuToggle');
-      const navLinks = document.getElementById('navLinks');
-
-      if (toggle && navLinks) {
-        toggle.addEventListener('click', function () {
-          const isActive = navLinks.classList.toggle('active');
-          toggle.classList.toggle('active');
-          toggle.setAttribute('aria-expanded', isActive);
-        });
-
-        // Fecha o menu ao clicar em um link (mobile)
-        navLinks.querySelectorAll('a').forEach(function (link) {
-          link.addEventListener('click', function () {
-            navLinks.classList.remove('active');
-            toggle.classList.remove('active');
-            toggle.setAttribute('aria-expanded', 'false');
-          });
-        });
-      }
-    })();
-
-    /* ========== NAVBAR SCROLL EFFECT ========== */
-    (function () {
-      const navbar = document.querySelector('.navbar');
-
-      if (navbar) {
-        window.addEventListener('scroll', function () {
-          if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-          } else {
-            navbar.classList.remove('scrolled');
-          }
-        });
-      }
-    })();
-
-    /* ========== SCROLL-REVEAL (Intersection Observer) ========== */
-    (function () {
-      var reveals = document.querySelectorAll('.reveal');
-
-      if ('IntersectionObserver' in window && reveals.length > 0) {
-        var observer = new IntersectionObserver(
-          function (entries) {
-            entries.forEach(function (entry) {
-              if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
-              }
-            });
-          },
-          { threshold: 0.15, rootMargin: '0px 0px -50px 0px' }
-        );
-
-        reveals.forEach(function (el) {
-          observer.observe(el);
-        });
-      } else {
-        // Fallback: mostra todos imediatamente se não houver suporte
-        reveals.forEach(function (el) {
-          el.classList.add('visible');
-        });
-      }
-    })();
-  </script>
+  <!-- JavaScript externo (carregado ao final do body para performance) -->
+  <script src="script.js"></script>
 
 </body>
 </html>

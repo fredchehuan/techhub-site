@@ -1,0 +1,16 @@
+# ============================================================
+# TechHub.ia.br – .gitignore
+# Mantém apenas arquivos HTML, CSS e JavaScript no repositório
+# ============================================================
+
+# Ignora TUDO por padrão
+*
+
+# Exceções: permite apenas os arquivos do site
+!.gitignore
+!*.html
+!*.css
+!*.js
+
+# Garante que subdiretórios também sejam permitidos (se houver)
+!*/
