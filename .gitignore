@@ -10,12 +10,15 @@
 !.gitignore
 !*/
 
+!css/
+!js/
+!assets/
 
 # Garante que subdiretórios também sejam permitidos (se houver)
 !css/*.css
 !js/*.js
 !assets/
-!assets/**/*  # or !assets/*
+!assets/*
 
 # Na pasta raiz
 !*.html
