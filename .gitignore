@@ -15,6 +15,7 @@
 !css/*.css
 !js/*.js
 !assets/
+!assets/**/*  # or !assets/*
 
 # Na pasta raiz
 !*.html
