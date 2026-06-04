@@ -1,26 +1,26 @@
-# ============================================================
-# TechHub.ia.br – .gitignore
-# Mantém apenas arquivos HTML, CSS e JavaScript no repositório
-# ============================================================
-
-# Ignora TUDO por padrão
+# Ignora tudo (arquivos e diretórios)
 *
 
-# Exceções: permite apenas os arquivos do site
+# Exceto o próprio .gitignore
 !.gitignore
-!*/
 
+# Permite as pastas (necessário para entrar nelas)
 !css/
 !js/
 !assets/
 
-# Garante que subdiretórios também sejam permitidos (se houver)
+# Permite apenas arquivos .css diretamente em css/
 !css/*.css
-!js/*.js
-!assets/
-!assets/*
+# Se quiser permitir em subpastas também, use: !css/**/*.css
 
-# Na pasta raiz
+# Permite apenas arquivos .js diretamente em js/
+!js/*.js
+# Se quiser permitir em subpastas também, use: !js/**/*.js
+
+# Permite todos os arquivos recursivamente dentro de assets/
+!assets/**/*
+
+# Permite arquivos específicos na raiz
 !*.html
 !robots.txt
 !sitemap.xml
