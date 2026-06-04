@@ -8,12 +8,15 @@
 
 # Exceções: permite apenas os arquivos do site
 !.gitignore
-!*.html
-!*.css
-!*.js
+!*/
 
 
 # Garante que subdiretórios também sejam permitidos (se houver)
-!*./assets
-!*./js
-!*./css
+!css/*.css
+!js/*.js
+!assets/
+
+# Na pasta raiz
+!*.html
+!robots.txt
+!sitemap.xml
