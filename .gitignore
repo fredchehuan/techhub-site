@@ -12,5 +12,8 @@
 !*.css
 !*.js
 
+
 # Garante que subdiretórios também sejam permitidos (se houver)
-!*/
+!*./assets
+!*./js
+!*./css
