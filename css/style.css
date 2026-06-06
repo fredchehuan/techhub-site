@@ -135,7 +135,7 @@ section {
   background: none;
   border: none;
   box-shadow: none;
-  border-radius: 0;
+  border-radius: 7px;
   color: inherit; /* não usado, mas evita herança indevida */
 }
 

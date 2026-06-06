@@ -7,10 +7,10 @@
     </linearGradient>
 
     <!-- Filtro de sombra: glow + profundidade -->
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <!-- <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.25" />
       <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#00C9B6" flood-opacity="0.4" />
-    </filter>
+    </filter> -->
   </defs>
 
   <!-- Fundo com gradiente e cantos arredondados 14px -->
