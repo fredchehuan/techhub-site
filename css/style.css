@@ -817,6 +817,10 @@ footer {
   .team-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .hero-content {
+    padding-top: 30px;
+  }
 }
 
 @media (max-width: 968px) {
