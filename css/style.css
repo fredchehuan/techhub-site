@@ -33,7 +33,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 50px;
+  scroll-padding-top: 90px;
 }
 
 body {
@@ -322,7 +322,7 @@ section {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: 70px;
+  padding-top: 100px;
   padding-bottom: 60px;
 }
 
