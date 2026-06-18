@@ -38,9 +38,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <!-- Favicon (SVG inline via data URI – letra "T" estilizada com acento tech) -->
+  <!-- Favicon (SVG inline via data URI) -->
    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2300E676'/%3E%3Cstop offset='100%25' stop-color='%2300C9B6'/%3E%3C/linearGradient%3E%3Cfilter id='shadow' x='-20%25' y='-20%25' width='140%25' height='140%25'%3E%3CfeDropShadow dx='0' dy='4' stdDeviation='6' flood-color='%23000000' flood-opacity='0.25' /%3E%3CfeDropShadow dx='0' dy='0' stdDeviation='4' flood-color='%2300C9B6' flood-opacity='0.4' /%3E%3C/filter%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23grad)' filter='url(%23shadow)' /%3E%3Crect x='1' y='1' width='62' height='62' rx='13' fill='none' stroke='rgba(255,255,255,0.25)' stroke-width='1.5' /%3E%3Crect x='14' y='14' width='36' height='10' rx='5' fill='%230A0A0A' /%3E%3Crect x='27' y='14' width='10' height='38' rx='5' fill='%230A0A0A' /%3E%3C/svg%3E">
-      
+
   <!-- ==================== JSON-LD DADOS ESTRUTURADOS (Schema.org) ==================== -->
   <script type="application/ld+json">
   {
@@ -55,13 +55,13 @@
         "@type": "ContactPoint",
         "contactType": "sales",
         "email": "contato@techhub.ia.br",
-        "url": "https://wa.me/5500000000000",
+        "url": "https://techhub.ia.br/#fale-com-especialista",
         "availableLanguage": "Portuguese"
       }
     ],
     "sameAs": [
       "https://linkedin.com/company/techhub-ia-br",
-      "https://wa.me/5500000000000"
+      "https://wa.me/5521995202385"
     ],
     "address": {
       "@type": "PostalAddress",
@@ -94,7 +94,7 @@
           <li role="none"><a href="#cases"       role="menuitem">Cases</a></li>
           <li role="none"><a href="#depoimentos" role="menuitem">Depoimentos</a></li>
           <li role="none">
-            <a href="#contato" class="btn btn-primary" role="menuitem">Agendar Diagnóstico</a>
+            <a href="#fale-com-especialista" class="btn btn-primary" role="menuitem">Falar com Especialista</a>
           </li>
         </ul>
       </nav>
@@ -129,13 +129,37 @@
               unindo especialistas a uma arquitetura AI-First com metodologia própria para resultados
               sem surpresas técnicas ou financeiras.
             </p>
+
+            <!-- ====== FOMO STATS COUNTERS ====== -->
+            <div class="hero-stats" id="heroStats">
+              <div class="stat-item">
+                <span class="stat-number">
+                  <span class="counter" data-target="23" data-suffix="%">0</span>
+                </span>
+                <span class="stat-label">+ conversão em vendas</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">
+                  <span class="counter" data-target="2" data-prefix="R$ " data-suffix="M+" data-decimals="0">0</span>
+                </span>
+                <span class="stat-label">captados para clientes</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">
+                  <span class="counter" data-target="70" data-suffix="%" data-direction="down">0</span>
+                </span>
+                <span class="stat-label">menos tempo de entrega</span>
+              </div>
+            </div>
+
             <div class="hero-buttons">
-              <a href="#contato" class="btn btn-primary">Quero acelerar meu projeto</a>
-              <a href="#cases" class="btn btn-outline">Ver Cases</a>
+              <button class="btn btn-primary btn-lg" onclick="openLeadModal()" aria-label="Abrir formulário de contato">
+                Quero acelerar meu projeto
+              </button>
             </div>
           </div>
 
-          <!-- Orbe animada (elemento visual abstrato – sem imagem externa) -->
+          <!-- Orbe animada (elemento visual abstrato) -->
           <div class="hero-visual" aria-hidden="true">
             <div class="tech-orb">
               <div class="orb-ring"></div>
@@ -215,128 +239,6 @@
       </div>
     </section>
 
-    <!-- ========== CASES DE SUCESSO ========== -->
-    <section id="cases" aria-labelledby="cases-title" style="background: var(--bg-secondary);">
-      <div class="container">
-
-        <div class="section-header reveal">
-          <span class="section-label">Cases</span>
-          <h2 class="section-title" id="cases-title">
-            Projetos que <span class="highlight">aceleramos</span>
-          </h2>
-          <p class="section-subtitle">
-            Resultados reais com nosso método AI First.
-          </p>
-        </div>
-
-        <div class="cards-grid reveal">
-
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">
-              <!-- Ícone: cifrão / fintech -->
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <line x1="12" y1="1" x2="12" y2="23"/>
-                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-              </svg>
-            </div>
-            <h3>MVP para Fintech</h3>
-            <p>
-              Desenvolvemos o MVP completo de uma plataforma de pagamentos
-              em <strong>6 semanas</strong>. Integração com open banking, dashboard
-              analytics e processamento de transações em tempo real.
-            </p>
-            <p style="color: var(--accent); font-weight: 600; margin-top: 12px; font-size: 0.9rem;">
-              Resultado: R$ 2M em rodada seed captada
-            </p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">
-              <!-- Ícone: pulso / pipeline -->
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
-              </svg>
-            </div>
-            <h3>Pipeline de Dados para E-commerce</h3>
-            <p>
-              Construímos uma arquitetura de dados completa para um e-commerce
-              com <strong>2 milhões de SKUs</strong>. Lake house no Databricks,
-              pipelines em tempo real e modelos de recomendação com IA.
-            </p>
-            <p style="color: var(--accent); font-weight: 600; margin-top: 12px; font-size: 0.9rem;">
-              Resultado: +23% em conversão de vendas
-            </p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">
-              <!-- Ícone: chat / chatbot -->
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-              </svg>
-            </div>
-            <h3>Chatbot IA para Suporte</h3>
-            <p>
-              Implementamos um agente de IA baseado em LLM para suporte ao cliente
-              de uma SaaS B2B. Resolução de <strong>85% dos tickets</strong> sem
-              intervenção humana.
-            </p>
-            <p style="color: var(--accent); font-weight: 600; margin-top: 12px; font-size: 0.9rem;">
-              Resultado: -70% no tempo médio de resposta
-            </p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== DEPOIMENTOS ========== -->
-    <section id="depoimentos" aria-labelledby="depoimentos-title">
-      <div class="container">
-
-        <div class="section-header reveal">
-          <span class="section-label">Depoimentos</span>
-          <h2 class="section-title" id="depoimentos-title">
-            O que <span class="highlight">nossos clientes</span> dizem
-          </h2>
-        </div>
-
-        <div class="cards-grid reveal" style="max-width: 1000px; margin: 0 auto;">
-
-          <div class="testimonial-card">
-            <p class="testimonial-text">
-              Entregaram o MVP da nossa plataforma em 4 semanas. A qualidade do
-              código e a velocidade de entrega superaram todas as nossas expectativas.
-              O uso de IA no processo fez toda a diferença.
-            </p>
-            <p class="testimonial-author">Rafael Mendes</p>
-            <p class="testimonial-role">CEO, Fintech Inovva</p>
-          </div>
-
-          <div class="testimonial-card">
-            <p class="testimonial-text">
-              Precisávamos de um engenheiro de dados sênior com urgência para um
-              projeto crítico. O profissional alocado pela TechHub se integrou ao
-              time em dias e entregou resultados na primeira semana.
-            </p>
-            <p class="testimonial-author">Camila Duarte</p>
-            <p class="testimonial-role">CTO, E-commerce Nova</p>
-          </div>
-
-          <div class="testimonial-card">
-            <p class="testimonial-text">
-              A abordagem AI First é real. O chatbot que eles construíram para nosso
-              suporte reduziu 70% do volume de tickets em menos de um mês.
-              Profissionais excepcionais.
-            </p>
-            <p class="testimonial-author">Thiago Siqueira</p>
-            <p class="testimonial-role">Head de Produto, SaaS Up</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
     <!-- ========== SERVIÇOS / O QUE FAZEMOS ========== -->
     <section id="servicos" aria-labelledby="servicos-title">
       <div class="container">
@@ -357,7 +259,6 @@
 
           <article class="card">
             <div class="card-icon" aria-hidden="true">
-              <!-- Ícone: foguete -->
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
                 <path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
@@ -374,7 +275,6 @@
 
           <article class="card">
             <div class="card-icon" aria-hidden="true">
-              <!-- Ícone: pessoas / outsourcing -->
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
                 <circle cx="9" cy="7" r="4"/>
@@ -392,7 +292,6 @@
 
           <article class="card">
             <div class="card-icon" aria-hidden="true">
-              <!-- Ícone: chip / IA -->
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <rect x="4" y="4" width="16" height="16" rx="2"/>
                 <rect x="9" y="9" width="6" height="6"/>
@@ -486,6 +385,173 @@
           </div>
 
         </div>
+      </div>
+    </section>
+
+    <!-- ========== CASES DE SUCESSO (ACCORDION) ========== -->
+    <section id="cases" aria-labelledby="cases-title" style="background: var(--bg-secondary);">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <span class="section-label">Cases</span>
+          <h2 class="section-title" id="cases-title">
+            Projetos que <span class="highlight">aceleramos</span>
+          </h2>
+          <p class="section-subtitle">
+            Resultados reais com nosso método AI First. Clique para expandir.
+          </p>
+        </div>
+
+        <div class="accordion reveal" id="casesAccordion">
+
+          <div class="accordion-item active">
+            <button class="accordion-header" aria-expanded="true">
+              <div class="accordion-header-left">
+                <div class="card-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="6" cy="12" r="3.5"/>
+                    <circle cx="18" cy="12" r="3.5"/>
+                    <line x1="10" y1="12" x2="14" y2="12"/>
+                    <polyline points="10,12 8,10 8,14"/>
+                    <polyline points="14,12 16,10 16,14"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3>Integração de Produtos iFood</h3>
+                  <span class="accordion-badge">+11x produtos | -90% tempo</span>
+                </div>
+              </div>
+              <span class="accordion-arrow" aria-hidden="true">&#9660;</span>
+            </button>
+            <div class="accordion-body">
+              <p>
+                Desenvolvemos uma automação para integração de produtos diretamente do banco de dados do
+                ERP do cliente para o marketplace do iFood em <strong>2 dias</strong>. Com isso o cliente
+                multiplicou em 11x a prateleira de produtos no iFood à simplicidade de um clique e poucos minutos.
+              </p>
+              <p class="accordion-result">
+                Resultado: -90% no tempo de atualização de produtos no iFood + 11X qtd de produtos na prateleira
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <div class="accordion-header-left">
+                <div class="card-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3>Pipeline de Dados para E-commerce</h3>
+                  <span class="accordion-badge">+23% conversão</span>
+                </div>
+              </div>
+              <span class="accordion-arrow" aria-hidden="true">&#9660;</span>
+            </button>
+            <div class="accordion-body">
+              <p>
+                Construímos uma arquitetura de dados completa para um e-commerce
+                com <strong>2 milhões de SKUs</strong>. Lake house no Databricks,
+                pipelines em tempo real e modelos de recomendação com IA.
+              </p>
+              <p class="accordion-result">
+                Resultado: +23% em conversão de vendas
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <div class="accordion-header-left">
+                <div class="card-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3>Chatbot IA para Suporte</h3>
+                  <span class="accordion-badge">-70% tempo resposta</span>
+                </div>
+              </div>
+              <span class="accordion-arrow" aria-hidden="true">&#9660;</span>
+            </button>
+            <div class="accordion-body">
+              <p>
+                Implementamos um agente de IA baseado em LLM para suporte ao cliente
+                de uma SaaS B2B. Resolução de <strong>85% dos tickets</strong> sem
+                intervenção humana.
+              </p>
+              <p class="accordion-result">
+                Resultado: -70% no tempo médio de resposta
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== DEPOIMENTOS (CAROUSEL) ========== -->
+    <section id="depoimentos" aria-labelledby="depoimentos-title">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <span class="section-label">Depoimentos</span>
+          <h2 class="section-title" id="depoimentos-title">
+            O que <span class="highlight">nossos clientes</span> dizem
+          </h2>
+        </div>
+
+        <div class="carousel reveal" id="testimonialCarousel" aria-roledescription="carousel" aria-label="Depoimentos de clientes">
+          <div class="carousel-track" id="carouselTrack">
+
+            <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Depoimento 1 de 3">
+              <div class="testimonial-card">
+                <p class="testimonial-text">
+                  Entregaram o MVP da nossa plataforma em 4 semanas. A qualidade do
+                  código e a velocidade de entrega superaram todas as nossas expectativas.
+                  O uso de IA no processo fez toda a diferença.
+                </p>
+                <p class="testimonial-author">Rafael Mendes</p>
+                <p class="testimonial-role">CEO, Fintech Inovva</p>
+              </div>
+            </div>
+
+            <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Depoimento 2 de 3">
+              <div class="testimonial-card">
+                <p class="testimonial-text">
+                  Precisávamos de um engenheiro de dados sênior com urgência para um
+                  projeto crítico. O profissional alocado pela TechHub se integrou ao
+                  time em dias e entregou resultados na primeira semana.
+                </p>
+                <p class="testimonial-author">Camila Duarte</p>
+                <p class="testimonial-role">CTO, E-commerce Nova</p>
+              </div>
+            </div>
+
+            <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Depoimento 3 de 3">
+              <div class="testimonial-card">
+                <p class="testimonial-text">
+                  A abordagem AI First é real. O chatbot que eles construíram para nosso
+                  suporte reduziu 70% do volume de tickets em menos de um mês.
+                  Profissionais excepcionais.
+                </p>
+                <p class="testimonial-author">Thiago Siqueira</p>
+                <p class="testimonial-role">Head de Produto, SaaS Up</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="carousel-controls">
+            <button class="carousel-dot active" data-slide="0" aria-label="Depoimento 1"><span></span></button>
+            <button class="carousel-dot" data-slide="1" aria-label="Depoimento 2"><span></span></button>
+            <button class="carousel-dot" data-slide="2" aria-label="Depoimento 3"><span></span></button>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -638,7 +704,7 @@
               >
             </div>
             <p class="team-name">Guilherme Silva</p>
-            <p class="team-role">Engenheiro de Analytcs</p>
+            <p class="team-role">Engenheiro de Analytics</p>
             <p class="team-bio">
               Tech Lead habituado com cenários desafiadores e desenvolvimento de MVPs com rápida entrega, possui habilidades notáveis
               de uso de IA first aliadas às boas práticas de engenharia de dados, criando pipelines e modelos de dados estáveis.
@@ -662,7 +728,7 @@
             <p class="team-role">Engenheiro de Dados</p>
             <p class="team-bio">
               Constrói automações e soluções completas de dados utilizando tecnologia de ponta com Python, Spark, Databricks,
-              e DBT, desde o levantamento de requisito à formatação de relatórios, ajudando àreas de negócio a tomarem decisões baseadas em dados.
+              e DBT, desde o levantamento de requisito à formatação de relatórios, ajudando áreas de negócio a tomarem decisões baseadas em dados.
               Mais de 5 anos de experiência como analista e engenheiro de dados.
             </p>
           </article>
@@ -689,14 +755,72 @@
 
         </div>
 
-      
-        </div>
-
-        
       </div>
     </section>
 
-    
+    <!-- ========== FORMULÁRIO DE CAPTURA: Fale com um Especialista ========== -->
+    <section id="fale-com-especialista" aria-labelledby="form-title">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <span class="section-label">Fale com um Especialista</span>
+          <h2 class="section-title" id="form-title">
+            Pronto para <span class="highlight">acelerar seu projeto</span> com IA?
+          </h2>
+          <p class="section-subtitle">
+            Preencha o formulário abaixo e um de nossos especialistas entrará em contato
+            para uma consultoria gratuita de 30 minutos.
+          </p>
+        </div>
+
+        <div class="form-wrapper reveal">
+          <form id="leadForm" class="lead-form" action="https://formsubmit.co/nes.tecnologia@gmail.com" method="POST" novalidate>
+            <input type="hidden" name="_subject" value="Novo Lead - TechHub IA">
+            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="_next" value="https://techhub.ia.br/#obrigado">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nome" class="form-label">Nome completo *</label>
+                <input type="text" id="nome" name="nome" class="form-input" placeholder="Seu nome completo" required autocomplete="name">
+                <span class="form-error" id="nomeError" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">E-mail corporativo *</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="seu@empresa.com.br" required autocomplete="email">
+                <span class="form-error" id="emailError" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="empresa" class="form-label">Nome da Empresa *</label>
+              <input type="text" id="empresa" name="empresa" class="form-input" placeholder="Nome da sua empresa" required autocomplete="organization">
+              <span class="form-error" id="empresaError" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem" class="form-label">Mensagem *</label>
+              <textarea id="mensagem" name="mensagem" class="form-textarea" rows="4" placeholder="Conte-nos sobre seu projeto, desafio ou objetivo..." required></textarea>
+              <span class="form-error" id="mensagemError" aria-live="polite"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg btn-full">
+              Quero uma consultoria gratuita de 30 min
+            </button>
+
+            <p class="form-disclaimer">
+              Seus dados estão seguros. Não compartilhamos suas informações com terceiros.
+            </p>
+          </form>
+
+          <div class="form-success" id="formSuccess" style="display:none;">
+            <div class="success-icon">&#10003;</div>
+            <h3>Recebemos sua solicitação!</h3>
+            <p>Um de nossos especialistas entrará em contato em até 24 horas.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
 
     <!-- ========== CTA FINAL ========== -->
     <section id="contato" aria-labelledby="cta-title">
@@ -705,32 +829,90 @@
         <div class="section-header reveal">
           <span class="section-label">Vamos conversar?</span>
           <h2 class="section-title" id="cta-title">
-            Pronto para <span class="highlight">acelerar seu projeto</span> com IA?
+            Dê o primeiro passo para <span class="highlight">transformar seu negócio</span>
           </h2>
           <p class="section-subtitle">
-            Fale com um de nossos especialistas e descubra como podemos ajudar
-            seu negócio a sair do papel – ou escalar – com tecnologia de ponta.
+            Agende uma consultoria gratuita de 30 minutos com um de nossos especialistas
+            e descubra como podemos ajudar seu projeto a sair do papel com tecnologia de ponta.
           </p>
         </div>
 
         <div class="reveal" style="text-align: center;">
-          <a href="https://wa.me/5500000000000"
-             target="_blank"
-             rel="noopener noreferrer"
-             class="btn btn-primary"
-             style="font-size: 1.05rem; padding: 16px 36px;">
-            <!-- Ícone WhatsApp -->
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
-            </svg>
-            Agendar uma conversa no WhatsApp
-          </a>
+          <button onclick="openLeadModal()" class="btn btn-primary" style="font-size: 1.05rem; padding: 16px 36px;">
+            Agendar consultoria gratuita
+          </button>
         </div>
 
       </div>
     </section>
 
   </main>
+
+  <!-- ==================== LEAD CAPTURE MODAL ==================== -->
+  <div class="modal-overlay" id="leadModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle" aria-modal="true">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeLeadModal()" aria-label="Fechar formulário">&times;</button>
+
+      <div class="modal-header">
+        <span class="section-label">Fale com um Especialista</span>
+        <h2 id="modalTitle">Consultoria <span class="highlight">gratuita</span> de 30 min</h2>
+        <p>Preencha seus dados e receba uma análise personalizada do seu projeto.</p>
+      </div>
+
+      <form id="modalLeadForm" class="lead-form" action="https://formsubmit.co/nes.tecnologia@gmail.com" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="Novo Lead - TechHub IA (Modal)">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_next" value="https://techhub.ia.br/#obrigado">
+        <div class="form-group">
+          <label for="modalNome" class="form-label">Nome completo *</label>
+          <input type="text" id="modalNome" name="nome" class="form-input" placeholder="Seu nome completo" required autocomplete="name">
+          <span class="form-error" id="modalNomeError" aria-live="polite"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="modalEmail" class="form-label">E-mail corporativo *</label>
+          <input type="email" id="modalEmail" name="email" class="form-input" placeholder="seu@empresa.com.br" required autocomplete="email">
+          <span class="form-error" id="modalEmailError" aria-live="polite"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="modalEmpresa" class="form-label">Nome da Empresa *</label>
+          <input type="text" id="modalEmpresa" name="empresa" class="form-input" placeholder="Nome da sua empresa" required autocomplete="organization">
+          <span class="form-error" id="modalEmpresaError" aria-live="polite"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="modalMensagem" class="form-label">Mensagem *</label>
+          <textarea id="modalMensagem" name="mensagem" class="form-textarea" rows="3" placeholder="Conte-nos sobre seu projeto..." required></textarea>
+          <span class="form-error" id="modalMensagemError" aria-live="polite"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg btn-full">
+          Quero uma consultoria gratuita de 30 min
+        </button>
+
+        <p class="form-disclaimer">
+          Seus dados estão seguros. Não compartilhamos suas informações com terceiros.
+        </p>
+      </form>
+
+      <div class="form-success" id="modalFormSuccess" style="display:none;">
+        <div class="success-icon">&#10003;</div>
+        <h3>Recebemos sua solicitação!</h3>
+        <p>Um de nossos especialistas entrará em contato em até 24 horas.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== STICKY CTA BAR ==================== -->
+  <div class="sticky-cta" id="stickyCta" aria-hidden="true">
+    <div class="container">
+      <span class="sticky-cta-text">Fale com um especialista agora</span>
+      <button class="btn btn-primary sticky-cta-btn" onclick="openLeadModal()">
+        Consultoria Gratuita
+      </button>
+    </div>
+  </div>
 
   <!-- ==================== FOOTER ==================== -->
   <footer role="contentinfo">
@@ -747,7 +929,6 @@
             <a href="mailto:contato@techhub.ia.br"
                aria-label="Enviar e-mail para TechHub"
                title="E-mail">
-              <!-- Ícone: envelope -->
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <rect x="2" y="4" width="20" height="16" rx="2"/>
                 <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
@@ -760,19 +941,17 @@
                target="_blank"
                rel="noopener noreferrer"
                title="LinkedIn">
-              <!-- Ícone: LinkedIn -->
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
               </svg>
             </a>
           </li>
           <li>
-            <a href="https://wa.me/5500000000000"
+            <a href="https://wa.me/5521995202385?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20de%20IA%20da%20TechHub."
                aria-label="WhatsApp TechHub"
                target="_blank"
                rel="noopener noreferrer"
                title="WhatsApp">
-              <!-- Ícone: WhatsApp -->
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
               </svg>
@@ -788,13 +967,24 @@
     </div>
   </footer>
 
-  <!-- JavaScript externo (carregado ao final do body para performance) -->
+  <!-- JavaScripts externos (carregado ao final do body para performance) -->
   <script src="./js/main.js"></script>
+  <!-- Chatwoot SDK para suporte ao cliente -->
   <script>
-        (function(w,d,u){
-                var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
-                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-        })(window,document,'https://b24-fnhtto.bitrix24.com.br/contact_center/connector/?ID=livechat&LINE=2&action-line=create');
-</script>
+    (function(d,t) {
+      var BASE_URL="http://localhost:3000";
+      var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=BASE_URL+"/packs/js/sdk.js";
+      g.async = true;
+      s.parentNode.insertBefore(g,s);
+      g.onload=function(){
+        window.chatwootSDK.run({
+          websiteToken: 'r8QUN9hsTo2eddSdjWwkFPtn',
+          baseUrl: BASE_URL
+        })
+      }
+    })(document,"script");
+  </script>
+
 </body>
 </html>
