@@ -343,7 +343,7 @@
      ======================================================== */
   var stickyCta = document.getElementById('stickyCta');
   if (stickyCta) {
-    var stickyThreshold = 0.4; // 40% da página
+    var stickyThreshold = 0.10; // 10% da página
     var stickyShown = false;
 
     window.addEventListener('scroll', function () {
