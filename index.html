@@ -778,7 +778,6 @@
           <form id="leadForm" class="lead-form" action="https://formsubmit.co/nes.tecnologia@gmail.com" method="POST" novalidate>
             <input type="hidden" name="_subject" value="Novo Lead - TechHub IA">
             <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://techhub.ia.br/#obrigado">
             <div class="form-row">
               <div class="form-group">
                 <label for="nome" class="form-label">Nome completo *</label>
@@ -863,7 +862,6 @@
       <form id="modalLeadForm" class="lead-form" action="https://formsubmit.co/nes.tecnologia@gmail.com" method="POST" novalidate>
         <input type="hidden" name="_subject" value="Novo Lead - TechHub IA (Modal)">
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://techhub.ia.br/#obrigado">
         <div class="form-group">
           <label for="modalNome" class="form-label">Nome completo *</label>
           <input type="text" id="modalNome" name="nome" class="form-input" placeholder="Seu nome completo" required autocomplete="name">
@@ -970,10 +968,12 @@
 
   <!-- JavaScripts externos (carregado ao final do body para performance) -->
   <script src="./js/main.js"></script>
-  <!-- Chatwoot SDK para suporte ao cliente -->
+  <!-- Chatwoot SDK DESATIVADO – causava popup de autorizacao "wants to access other apps" -->
+  <!-- Reative quando o Chatwoot estiver hospedado em HTTPS com a URL correta -->
+  <!--
   <script>
     (function(d,t) {
-      var BASE_URL="http://localhost:3000";
+      var BASE_URL="https://chat.techhub.ia.br";
       var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
       g.src=BASE_URL+"/packs/js/sdk.js";
       g.async = true;
@@ -986,6 +986,7 @@
       }
     })(document,"script");
   </script>
+  -->
 
 </body>
 </html>
