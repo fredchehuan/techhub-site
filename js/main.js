@@ -273,8 +273,9 @@
   }
 
   /**
-   * Helper: Handle successful form submission
-   * After client-side validation passes, log lead data and allow FormSubmit POST to proceed.
+   * Helper: Handle successful form submission via AJAX (fetch)
+   * Sends data to FormSubmit without redirecting the user.
+   * Shows inline success message instead.
    */
   function handleFormSuccess(form, successDiv) {
     // Coletar dados para log antes de enviar
@@ -286,9 +287,47 @@
 
     console.log('Lead capturado:', dados);
 
-    // Submete o formulário ao FormSubmit (action/method já configurados no HTML)
-    // FormSubmit redirecionará o usuário para a URL definida em _next após o envio
-    form.submit();
+    // Desabilita o botão de submit para evitar envio duplo
+    var submitBtn = form.querySelector('button[type="submit"]');
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Enviando...';
+    }
+
+    // Envia via fetch (AJAX) – sem redirecionar o usuário
+    fetch(form.action, {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(function (response) {
+      if (response.ok) {
+        // Sucesso: esconde o form e mostra mensagem de sucesso
+        form.style.display = 'none';
+        if (successDiv) {
+          successDiv.style.display = '';
+          // Scroll suave até a mensagem de sucesso
+          successDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      } else {
+        // Erro do servidor – reabilita o botão
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Quero uma consultoria gratuita de 30 min';
+        }
+        console.error('Erro ao enviar formulário:', response.status);
+        alert('Ocorreu um erro ao enviar. Por favor, tente novamente ou entre em contato via WhatsApp.');
+      }
+    })
+    .catch(function (error) {
+      // Erro de rede – reabilita o botão
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Quero uma consultoria gratuita de 30 min';
+      }
+      console.error('Erro de rede ao enviar formulário:', error);
+      alert('Erro de conexão. Por favor, verifique sua internet e tente novamente.');
+    });
   }
 
   /* ========================================================
