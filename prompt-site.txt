@@ -1,3 +1,6 @@
+rover@techhub.ia.br
+VCFBYv7rFUba
+
 Crie um site one page (página única) para uma empresa de tecnologia chamada "TechHub.ia.br". O domínio sugerido é TechHub.ia.br.ia.br (apenas referência).
 
 O posicionamento da empresa é: somos um time de especialistas em Inteligência Artificial, Dados, Analytics, Ciência de Dados e Desenvolvimento de Software. Contamos com engenheiros de software, engenheiros de dados, cientistas de dados e designers experientes. Atendemos duas frentes principais:

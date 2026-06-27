@@ -968,25 +968,41 @@
 
   <!-- JavaScripts externos (carregado ao final do body para performance) -->
   <script src="./js/main.js"></script>
-  <!-- Chatwoot SDK DESATIVADO – causava popup de autorizacao "wants to access other apps" -->
-  <!-- Reative quando o Chatwoot estiver hospedado em HTTPS com a URL correta -->
-  <!--
+  
+  <!-- PRODUÇÃO -->
   <script>
     (function(d,t) {
-      var BASE_URL="https://chat.techhub.ia.br";
+      var BASE_URL="http://tebah.techhub.ia.br";
       var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
       g.src=BASE_URL+"/packs/js/sdk.js";
       g.async = true;
       s.parentNode.insertBefore(g,s);
       g.onload=function(){
         window.chatwootSDK.run({
-          websiteToken: 'r8QUN9hsTo2eddSdjWwkFPtn',
+          websiteToken: 'sPXmdhCC8ToBV1LRLiJ3wU4t',
           baseUrl: BASE_URL
         })
       }
     })(document,"script");
   </script>
-  -->
+
+  <!-- LOCALHOST -->
+  <!-- <script>
+    (function(d,t) {
+      var BASE_URL="http://localhost:3000";
+      var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=BASE_URL+"/packs/js/sdk.js";
+      g.async = true;
+      s.parentNode.insertBefore(g,s);
+      g.onload=function(){
+        window.chatwootSDK.run({
+          websiteToken: 'GWtC1imm5ZyS6zgrQqwugf4a',
+          baseUrl: BASE_URL
+        })
+      }
+    })(document,"script");
+  </script> -->
+
 
 </body>
 </html>
